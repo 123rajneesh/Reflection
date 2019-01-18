@@ -1,0 +1,7 @@
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\bin\Release\BaseClassConstructor.exe.config
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\bin\Release\BaseClassConstructor.exe
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\bin\Release\BaseClassConstructor.pdb
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Release\BaseClassConstructor.csprojAssemblyReference.cache
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Release\BaseClassConstructor.csproj.CoreCompileInputs.cache
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Release\BaseClassConstructor.exe
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Release\BaseClassConstructor.pdb

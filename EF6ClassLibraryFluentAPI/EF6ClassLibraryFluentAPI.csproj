@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED2A6C3A-B1D2-4B0E-9D4D-68786392B661}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EF6ClassLibraryFluentAPI</RootNamespace>
+    <AssemblyName>EF6ClassLibraryFluentAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs" />
+    <Compile Include="DomainEntity.cs" />
+    <Compile Include="EntityConfiguration\AddressEntityConfiguearion.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="BookDetail.cs" />
+    <Compile Include="EntityConfiguration\BookEntityConfiguration.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="EntityConfiguration\DepartmentEntityConfiguration.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EntityConfiguration\EmployeeEntityConfiguration.cs" />
+    <Compile Include="ManageDepartment.cs" />
+    <Compile Include="ManageEmployee.cs" />
+    <Compile Include="Migrations\201901101033515_Inital database.cs" />
+    <Compile Include="Migrations\201901101033515_Inital database.Designer.cs">
+      <DependentUpon>201901101033515_Inital database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901101158155_Fluent API Table Name.cs" />
+    <Compile Include="Migrations\201901101158155_Fluent API Table Name.Designer.cs">
+      <DependentUpon>201901101158155_Fluent API Table Name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901140530152_Mapped Single Entity With Multiple Tables.cs" />
+    <Compile Include="Migrations\201901140530152_Mapped Single Entity With Multiple Tables.Designer.cs">
+      <DependentUpon>201901140530152_Mapped Single Entity With Multiple Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901141409261_entity teacher added.cs" />
+    <Compile Include="Migrations\201901141409261_entity teacher added.Designer.cs">
+      <DependentUpon>201901141409261_entity teacher added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901150711488_Add BaseStudent.cs" />
+    <Compile Include="Migrations\201901150711488_Add BaseStudent.Designer.cs">
+      <DependentUpon>201901150711488_Add BaseStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901150944017_Revrese.cs" />
+    <Compile Include="Migrations\201901150944017_Revrese.Designer.cs">
+      <DependentUpon>201901150944017_Revrese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901150947235_Delete Teacher Entity.cs" />
+    <Compile Include="Migrations\201901150947235_Delete Teacher Entity.Designer.cs">
+      <DependentUpon>201901150947235_Delete Teacher Entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901150948550_Add Teacher Entity.cs" />
+    <Compile Include="Migrations\201901150948550_Add Teacher Entity.Designer.cs">
+      <DependentUpon>201901150948550_Add Teacher Entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901150956169_Delete.cs" />
+    <Compile Include="Migrations\201901150956169_Delete.Designer.cs">
+      <DependentUpon>201901150956169_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151007108_Add Teacher Entity with coulmn name.cs" />
+    <Compile Include="Migrations\201901151007108_Add Teacher Entity with coulmn name.Designer.cs">
+      <DependentUpon>201901151007108_Add Teacher Entity with coulmn name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151057402_department multiple.cs" />
+    <Compile Include="Migrations\201901151057402_department multiple.Designer.cs">
+      <DependentUpon>201901151057402_department multiple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151059567_department multiple table mapped.cs" />
+    <Compile Include="Migrations\201901151059567_department multiple table mapped.Designer.cs">
+      <DependentUpon>201901151059567_department multiple table mapped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151104151_department dbset remove.cs" />
+    <Compile Include="Migrations\201901151104151_department dbset remove.Designer.cs">
+      <DependentUpon>201901151104151_department dbset remove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151105014_department dbset remove3243243.cs" />
+    <Compile Include="Migrations\201901151105014_department dbset remove3243243.Designer.cs">
+      <DependentUpon>201901151105014_department dbset remove3243243.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151112489_map column and table to teacher.cs" />
+    <Compile Include="Migrations\201901151112489_map column and table to teacher.Designer.cs">
+      <DependentUpon>201901151112489_map column and table to teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151205026_Add Book Entity With multiple inheritance.cs" />
+    <Compile Include="Migrations\201901151205026_Add Book Entity With multiple inheritance.Designer.cs">
+      <DependentUpon>201901151205026_Add Book Entity With multiple inheritance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151210477_mapped book to bookdetail.cs" />
+    <Compile Include="Migrations\201901151210477_mapped book to bookdetail.Designer.cs">
+      <DependentUpon>201901151210477_mapped book to bookdetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151211434_rename book to bookdetail.cs" />
+    <Compile Include="Migrations\201901151211434_rename book to bookdetail.Designer.cs">
+      <DependentUpon>201901151211434_rename book to bookdetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160715169_Ignor CVV from Teacher Entity.cs" />
+    <Compile Include="Migrations\201901160715169_Ignor CVV from Teacher Entity.Designer.cs">
+      <DependentUpon>201901160715169_Ignor CVV from Teacher Entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160717162_Add CVV from Teacher Entity.cs" />
+    <Compile Include="Migrations\201901160717162_Add CVV from Teacher Entity.Designer.cs">
+      <DependentUpon>201901160717162_Add CVV from Teacher Entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160720379_Remove CVV from Teacher Entity.cs" />
+    <Compile Include="Migrations\201901160720379_Remove CVV from Teacher Entity.Designer.cs">
+      <DependentUpon>201901160720379_Remove CVV from Teacher Entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160722010_Delete CVV from Teacher Entity.cs" />
+    <Compile Include="Migrations\201901160722010_Delete CVV from Teacher Entity.Designer.cs">
+      <DependentUpon>201901160722010_Delete CVV from Teacher Entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160938014_Add Address .cs" />
+    <Compile Include="Migrations\201901160938014_Add Address .Designer.cs">
+      <DependentUpon>201901160938014_Add Address .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160939421_rename Address to employeeaddress.cs" />
+    <Compile Include="Migrations\201901160939421_rename Address to employeeaddress.Designer.cs">
+      <DependentUpon>201901160939421_rename Address to employeeaddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160942524_MapToStoredProcedure.cs" />
+    <Compile Include="Migrations\201901160942524_MapToStoredProcedure.Designer.cs">
+      <DependentUpon>201901160942524_MapToStoredProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901161245141_Rename property of StudentDeatil.cs" />
+    <Compile Include="Migrations\201901161245141_Rename property of StudentDeatil.Designer.cs">
+      <DependentUpon>201901161245141_Rename property of StudentDeatil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170515422_Remove Student.cs" />
+    <Compile Include="Migrations\201901170515422_Remove Student.Designer.cs">
+      <DependentUpon>201901170515422_Remove Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170518479_add student entity using student entity configuration.cs" />
+    <Compile Include="Migrations\201901170518479_add student entity using student entity configuration.Designer.cs">
+      <DependentUpon>201901170518479_add student entity using student entity configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170526505_Remove teacher.cs" />
+    <Compile Include="Migrations\201901170526505_Remove teacher.Designer.cs">
+      <DependentUpon>201901170526505_Remove teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170528572_add teacher entity using teacher entity configuration.cs" />
+    <Compile Include="Migrations\201901170528572_add teacher entity using teacher entity configuration.Designer.cs">
+      <DependentUpon>201901170528572_add teacher entity using teacher entity configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170537273_Remove employee entity.cs" />
+    <Compile Include="Migrations\201901170537273_Remove employee entity.Designer.cs">
+      <DependentUpon>201901170537273_Remove employee entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170637303_update migration.cs" />
+    <Compile Include="Migrations\201901170637303_update migration.Designer.cs">
+      <DependentUpon>201901170637303_update migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170641120_Remove book table.cs" />
+    <Compile Include="Migrations\201901170641120_Remove book table.Designer.cs">
+      <DependentUpon>201901170641120_Remove book table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170648509_migration for hiding base class.cs" />
+    <Compile Include="Migrations\201901170648509_migration for hiding base class.Designer.cs">
+      <DependentUpon>201901170648509_migration for hiding base class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170654299_update book migration to hide base class 1.cs" />
+    <Compile Include="Migrations\201901170654299_update book migration to hide base class 1.Designer.cs">
+      <DependentUpon>201901170654299_update book migration to hide base class 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170708356_update book migration to hide base class 2.cs" />
+    <Compile Include="Migrations\201901170708356_update book migration to hide base class 2.Designer.cs">
+      <DependentUpon>201901170708356_update book migration to hide base class 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170723399_update book migration to hide base class 3.cs" />
+    <Compile Include="Migrations\201901170723399_update book migration to hide base class 3.Designer.cs">
+      <DependentUpon>201901170723399_update book migration to hide base class 3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170726454_update book migration to hide base class 4.cs" />
+    <Compile Include="Migrations\201901170726454_update book migration to hide base class 4.Designer.cs">
+      <DependentUpon>201901170726454_update book migration to hide base class 4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170743328_update book migration to hide base class 5 domainEntity.cs" />
+    <Compile Include="Migrations\201901170743328_update book migration to hide base class 5 domainEntity.Designer.cs">
+      <DependentUpon>201901170743328_update book migration to hide base class 5 domainEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170752314_update book migration to hide base class  domainEntity 6.cs" />
+    <Compile Include="Migrations\201901170752314_update book migration to hide base class  domainEntity 6.Designer.cs">
+      <DependentUpon>201901170752314_update book migration to hide base class  domainEntity 6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170755403_update book migration to hide base class  domainEntity 7.cs" />
+    <Compile Include="Migrations\201901170755403_update book migration to hide base class  domainEntity 7.Designer.cs">
+      <DependentUpon>201901170755403_update book migration to hide base class  domainEntity 7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170757164_update book migration to hide base class  domainEntity 8.cs" />
+    <Compile Include="Migrations\201901170757164_update book migration to hide base class  domainEntity 8.Designer.cs">
+      <DependentUpon>201901170757164_update book migration to hide base class  domainEntity 8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170757550_update book migration to hide base class  domainEntity 9.cs" />
+    <Compile Include="Migrations\201901170757550_update book migration to hide base class  domainEntity 9.Designer.cs">
+      <DependentUpon>201901170757550_update book migration to hide base class  domainEntity 9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170759113_update book migration to hide base class  domainEntity 10.cs" />
+    <Compile Include="Migrations\201901170759113_update book migration to hide base class  domainEntity 10.Designer.cs">
+      <DependentUpon>201901170759113_update book migration to hide base class  domainEntity 10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170841294_update book migration to hide base class  domainEntity 11.cs" />
+    <Compile Include="Migrations\201901170841294_update book migration to hide base class  domainEntity 11.Designer.cs">
+      <DependentUpon>201901170841294_update book migration to hide base class  domainEntity 11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170846397_update book migration to hide base class  domainEntity 12.cs" />
+    <Compile Include="Migrations\201901170846397_update book migration to hide base class  domainEntity 12.Designer.cs">
+      <DependentUpon>201901170846397_update book migration to hide base class  domainEntity 12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170847126_update book migration to hide base class  domainEntity 13.cs" />
+    <Compile Include="Migrations\201901170847126_update book migration to hide base class  domainEntity 13.Designer.cs">
+      <DependentUpon>201901170847126_update book migration to hide base class  domainEntity 13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170848046_update book migration to hide base class  domainEntity 14.cs" />
+    <Compile Include="Migrations\201901170848046_update book migration to hide base class  domainEntity 14.Designer.cs">
+      <DependentUpon>201901170848046_update book migration to hide base class  domainEntity 14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170853413_update book migration to hide base class  domainEntity 15.cs" />
+    <Compile Include="Migrations\201901170853413_update book migration to hide base class  domainEntity 15.Designer.cs">
+      <DependentUpon>201901170853413_update book migration to hide base class  domainEntity 15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170940363_update migration 16.cs" />
+    <Compile Include="Migrations\201901170940363_update migration 16.Designer.cs">
+      <DependentUpon>201901170940363_update migration 16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901170941381_update migration 17.cs" />
+    <Compile Include="Migrations\201901170941381_update migration 17.Designer.cs">
+      <DependentUpon>201901170941381_update migration 17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleDBContext.cs" />
+    <Compile Include="SampleDBInitializer.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="EntityConfiguration\StudentEntityConfiguration.cs" />
+    <Compile Include="Teacher.cs" />
+    <Compile Include="EntityConfiguration\TeacherEntityConfiguration.cs" />
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201901101033515_Inital database.resx">
+      <DependentUpon>201901101033515_Inital database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901101158155_Fluent API Table Name.resx">
+      <DependentUpon>201901101158155_Fluent API Table Name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901140530152_Mapped Single Entity With Multiple Tables.resx">
+      <DependentUpon>201901140530152_Mapped Single Entity With Multiple Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901141409261_entity teacher added.resx">
+      <DependentUpon>201901141409261_entity teacher added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901150711488_Add BaseStudent.resx">
+      <DependentUpon>201901150711488_Add BaseStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901150944017_Revrese.resx">
+      <DependentUpon>201901150944017_Revrese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901150947235_Delete Teacher Entity.resx">
+      <DependentUpon>201901150947235_Delete Teacher Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901150948550_Add Teacher Entity.resx">
+      <DependentUpon>201901150948550_Add Teacher Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901150956169_Delete.resx">
+      <DependentUpon>201901150956169_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151007108_Add Teacher Entity with coulmn name.resx">
+      <DependentUpon>201901151007108_Add Teacher Entity with coulmn name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151057402_department multiple.resx">
+      <DependentUpon>201901151057402_department multiple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151059567_department multiple table mapped.resx">
+      <DependentUpon>201901151059567_department multiple table mapped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151104151_department dbset remove.resx">
+      <DependentUpon>201901151104151_department dbset remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151105014_department dbset remove3243243.resx">
+      <DependentUpon>201901151105014_department dbset remove3243243.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151112489_map column and table to teacher.resx">
+      <DependentUpon>201901151112489_map column and table to teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151205026_Add Book Entity With multiple inheritance.resx">
+      <DependentUpon>201901151205026_Add Book Entity With multiple inheritance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151210477_mapped book to bookdetail.resx">
+      <DependentUpon>201901151210477_mapped book to bookdetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151211434_rename book to bookdetail.resx">
+      <DependentUpon>201901151211434_rename book to bookdetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160715169_Ignor CVV from Teacher Entity.resx">
+      <DependentUpon>201901160715169_Ignor CVV from Teacher Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160717162_Add CVV from Teacher Entity.resx">
+      <DependentUpon>201901160717162_Add CVV from Teacher Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160720379_Remove CVV from Teacher Entity.resx">
+      <DependentUpon>201901160720379_Remove CVV from Teacher Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160722010_Delete CVV from Teacher Entity.resx">
+      <DependentUpon>201901160722010_Delete CVV from Teacher Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160938014_Add Address .resx">
+      <DependentUpon>201901160938014_Add Address .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160939421_rename Address to employeeaddress.resx">
+      <DependentUpon>201901160939421_rename Address to employeeaddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160942524_MapToStoredProcedure.resx">
+      <DependentUpon>201901160942524_MapToStoredProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901161245141_Rename property of StudentDeatil.resx">
+      <DependentUpon>201901161245141_Rename property of StudentDeatil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170515422_Remove Student.resx">
+      <DependentUpon>201901170515422_Remove Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170518479_add student entity using student entity configuration.resx">
+      <DependentUpon>201901170518479_add student entity using student entity configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170526505_Remove teacher.resx">
+      <DependentUpon>201901170526505_Remove teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170528572_add teacher entity using teacher entity configuration.resx">
+      <DependentUpon>201901170528572_add teacher entity using teacher entity configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170537273_Remove employee entity.resx">
+      <DependentUpon>201901170537273_Remove employee entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170637303_update migration.resx">
+      <DependentUpon>201901170637303_update migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170641120_Remove book table.resx">
+      <DependentUpon>201901170641120_Remove book table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170648509_migration for hiding base class.resx">
+      <DependentUpon>201901170648509_migration for hiding base class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170654299_update book migration to hide base class 1.resx">
+      <DependentUpon>201901170654299_update book migration to hide base class 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170708356_update book migration to hide base class 2.resx">
+      <DependentUpon>201901170708356_update book migration to hide base class 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170723399_update book migration to hide base class 3.resx">
+      <DependentUpon>201901170723399_update book migration to hide base class 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170726454_update book migration to hide base class 4.resx">
+      <DependentUpon>201901170726454_update book migration to hide base class 4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170743328_update book migration to hide base class 5 domainEntity.resx">
+      <DependentUpon>201901170743328_update book migration to hide base class 5 domainEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170752314_update book migration to hide base class  domainEntity 6.resx">
+      <DependentUpon>201901170752314_update book migration to hide base class  domainEntity 6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170755403_update book migration to hide base class  domainEntity 7.resx">
+      <DependentUpon>201901170755403_update book migration to hide base class  domainEntity 7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170757164_update book migration to hide base class  domainEntity 8.resx">
+      <DependentUpon>201901170757164_update book migration to hide base class  domainEntity 8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170757550_update book migration to hide base class  domainEntity 9.resx">
+      <DependentUpon>201901170757550_update book migration to hide base class  domainEntity 9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170759113_update book migration to hide base class  domainEntity 10.resx">
+      <DependentUpon>201901170759113_update book migration to hide base class  domainEntity 10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170841294_update book migration to hide base class  domainEntity 11.resx">
+      <DependentUpon>201901170841294_update book migration to hide base class  domainEntity 11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170846397_update book migration to hide base class  domainEntity 12.resx">
+      <DependentUpon>201901170846397_update book migration to hide base class  domainEntity 12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170847126_update book migration to hide base class  domainEntity 13.resx">
+      <DependentUpon>201901170847126_update book migration to hide base class  domainEntity 13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170848046_update book migration to hide base class  domainEntity 14.resx">
+      <DependentUpon>201901170848046_update book migration to hide base class  domainEntity 14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170853413_update book migration to hide base class  domainEntity 15.resx">
+      <DependentUpon>201901170853413_update book migration to hide base class  domainEntity 15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170940363_update migration 16.resx">
+      <DependentUpon>201901170940363_update migration 16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901170941381_update migration 17.resx">
+      <DependentUpon>201901170941381_update migration 17.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
