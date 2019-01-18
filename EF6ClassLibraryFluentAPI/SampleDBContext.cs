@@ -14,15 +14,7 @@ namespace EF6ClassLibraryFluentAPI
         public SampleDBContext() : base("name=SampleDbFluentAPI-EF6CodeFirst")
         {
             Database.SetInitializer<SampleDBContext>(new SampleDBInitializer());
-        }
-        public DbSet<Employee> Employee { get; set; }
-        public DbSet<Department> Department { get; set; }
-        public DbSet<Student> Student { get; set; }
-        public DbSet<Teacher> Teacher { get; set; }
-       //public DbSet<Book> Book { get; set; }
-        public DbSet<Address> Address { get; set; }
-        public Test Test { get; set; }
-
+        }       
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Configure default schema

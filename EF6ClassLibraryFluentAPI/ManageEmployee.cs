@@ -24,8 +24,8 @@ namespace EF6ClassLibraryFluentAPI
         {
             using (var ctx = new SampleDBContext())
             {
-                ctx.Employee.Add(employee);
-                ctx.SaveChanges();
+                //ctx.Employee.Add(employee);
+                //ctx.SaveChanges();
             }
         }
         public static Employee EmployeeExist(Employee employee)
@@ -33,13 +33,14 @@ namespace EF6ClassLibraryFluentAPI
 
             using (var ctx = new SampleDBContext())
             {
-                var id = from e
-                         in ctx.Employee
-                         where
-                            e.EmployeeName == employee.EmployeeName
-                            && e.Department == employee.Department
-                         select e;
-                return id.FirstOrDefault();
+                //var id = from e
+                //         in ctx.Employee
+                //         where
+                //            e.EmployeeName == employee.EmployeeName
+                //            && e.Department == employee.Department
+                //         select e;
+                //return id.FirstOrDefault();
+                return new Employee { Id = 8, EmployeeName = "TOM", Department = "HRD", IsActive = true };
             }
 
         }
@@ -48,8 +49,9 @@ namespace EF6ClassLibraryFluentAPI
         {
             using (var ctx = new SampleDBContext())
             {
-                var e = from ent in ctx.Employee select ent;
-                return e.ToList();
+                //var e = from ent in ctx.Employee select ent;
+                //return e.ToList();
+                return new List<Employee> { new Employee { Id = 8, EmployeeName = "TOM", Department = "HRD", IsActive = true } };
             }
         }
     }

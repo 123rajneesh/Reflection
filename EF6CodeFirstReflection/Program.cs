@@ -94,12 +94,9 @@ namespace EF6CodeFirstReflection
         }
 
         public static void GetEntityMappingMetadta()
-        {
-            Employee e = new Employee();
+        {           
             SampleDBContext g = new SampleDBContext();
-
-            var constructor = g.GetType().GetConstructors();
-
+            
             Type type = typeof(SampleDBContext);
 
             var entityData = GetEntitywithProperties(type);

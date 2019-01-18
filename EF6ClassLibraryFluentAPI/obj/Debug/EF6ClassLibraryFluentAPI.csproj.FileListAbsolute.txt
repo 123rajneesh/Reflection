@@ -5,7 +5,6 @@ C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryF
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\bin\Debug\EntityFramework.xml
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.csprojAssemblyReference.cache
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.Migrations.Initaldatabase.resources
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.Migrations.FluentAPITableName.resources
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.Migrations.MappedSingleEntityWithMultipleTables.resources
