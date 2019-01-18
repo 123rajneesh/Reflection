@@ -48,6 +48,9 @@ C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluen
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\roslyn\VBCSCompiler.exe
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\Antlr3.Runtime.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EF6ClassLibraryFluentAPI.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.SqlServer.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\Microsoft.Web.Infrastructure.dll
@@ -61,6 +64,10 @@ C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluen
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\System.Web.WebPages.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\System.Web.WebPages.Razor.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\WebGrease.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EF6ClassLibraryFluentAPI.pdb
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EF6ClassLibraryFluentAPI.dll.config
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.xml
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.SqlServer.xml
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\System.Web.Helpers.xml
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\System.Web.Mvc.xml
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\System.Web.Optimization.xml
@@ -78,10 +85,3 @@ C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluen
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\obj\Debug\WebAppUsingFluentAPI.csproj.CopyComplete
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\obj\Debug\WebAppUsingFluentAPI.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\obj\Debug\WebAppUsingFluentAPI.pdb
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EF6ClassLibraryFluentAPI.dll
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.dll
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EF6ClassLibraryFluentAPI.pdb
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EF6ClassLibraryFluentAPI.dll.config
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.xml
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.SqlServer.dll
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\WebAppUsingFluentAPI\bin\EntityFramework.SqlServer.xml

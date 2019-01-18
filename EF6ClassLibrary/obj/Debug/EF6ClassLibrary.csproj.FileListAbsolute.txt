@@ -5,6 +5,7 @@ C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\bin\Debug\EntityFramework.xml
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\obj\Debug\EF6ClassLibrary.csprojAssemblyReference.cache
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\obj\Debug\EF6ClassLibrary.Migrations.InitializeDB.resources
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\obj\Debug\EF6ClassLibrary.Migrations.Departmentadded.resources
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibrary\obj\Debug\EF6ClassLibrary.csproj.GenerateResource.cache

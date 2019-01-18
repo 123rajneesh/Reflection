@@ -4,4 +4,3 @@ C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstru
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Debug\BaseClassConstructor.csproj.CoreCompileInputs.cache
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Debug\BaseClassConstructor.exe
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Debug\BaseClassConstructor.pdb
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Debug\BaseClassConstructor.csprojAssemblyReference.cache
