@@ -1,0 +1,13 @@
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Debug\EF6ClassLibraryCodeFirst.dll.config
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Debug\EF6ClassLibraryCodeFirst.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Debug\EF6ClassLibraryCodeFirst.pdb
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Debug\EntityFramework.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Debug\EntityFramework.xml
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Debug\EF6ClassLibraryCodeFirst.csproj.CoreCompileInputs.cache
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Debug\EF6ClassLibraryCodeFirst.csproj.CopyComplete
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Debug\EF6ClassLibraryCodeFirst.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Debug\EF6ClassLibraryCodeFirst.pdb
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Debug\EF6ClassLibraryCodeFirst.Migrations.Initial.resources
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Debug\EF6ClassLibraryCodeFirst.csproj.GenerateResource.cache

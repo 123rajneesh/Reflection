@@ -14,7 +14,7 @@ namespace EF6ClassLibraryFluentAPI
         public SampleDBContext() : base("name=SampleDbFluentAPI-EF6CodeFirst")
         {
             Database.SetInitializer<SampleDBContext>(new SampleDBInitializer());
-        }       
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Configure default schema
@@ -71,8 +71,13 @@ namespace EF6ClassLibraryFluentAPI
             modelBuilder.Configurations.Add(new AddressEntityConfiguearion());
 
             modelBuilder.Configurations.Add(new DepartmentEntityConfiguration());
+
+            //This is TPH mapping as there is a single table for the hierarchy.Table per Hierarchy (TPH): This approach suggests one table for the entire class inheritance hierarchy
+            modelBuilder.Configurations.Add(new BookEntityConfiguration());
             
-           modelBuilder.Configurations.Add(new BookEntityConfiguration());
+            //if you call ToTable on both classe then each type will be mapped to its own table, also known as TPT since each type has its own table.Table per Type (TPT) This approach suggests a separate table for each domain class
+            modelBuilder.Types<Book>()
+               .Configure(c => c.ToTable(c.ClrType.Name));
 
         }
     }

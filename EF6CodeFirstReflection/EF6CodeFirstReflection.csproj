@@ -39,6 +39,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -52,7 +55,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Metadata.cs" />
+    <Compile Include="CodeFirstRefelection.cs" />
+    <Compile Include="DBMapItem.cs" />
+    <Compile Include="DBMapItem2.cs" />
+    <Compile Include="DBMappingDetails.cs" />
+    <Compile Include="DBMappingDetails2.cs" />
+    <Compile Include="IDBMapItem.cs" />
+    <Compile Include="IDBMappingDetails2.cs" />
+    <Compile Include="IDBUsageBoundedContext.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="ORMMetadata.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,14 +73,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EF6ClassLibraryFluentAPI\EF6ClassLibraryFluentAPI.csproj">
-      <Project>{ed2a6c3a-b1d2-4b0e-9d4d-68786392b661}</Project>
-      <Name>EF6ClassLibraryFluentAPI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EF6CodeFirstDemo\EF6CodeFirstDemo.csproj">
       <Project>{ca7a111b-246e-46c9-8622-ece21fcadda1}</Project>
       <Name>EF6CodeFirstDemo</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserCodeMapping\Migrations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

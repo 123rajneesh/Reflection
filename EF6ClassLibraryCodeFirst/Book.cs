@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EF6ClassLibraryCodeFirst
 {
-    public class Book : DomainEntity<int>
+    public class Book : BookDetail
     {
         public int BookID { get; set; }
         public string Name { get; set; }

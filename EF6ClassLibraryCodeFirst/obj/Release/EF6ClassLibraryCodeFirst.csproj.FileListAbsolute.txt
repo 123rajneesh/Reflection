@@ -1,0 +1,11 @@
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Release\EF6ClassLibraryCodeFirst.csproj.CoreCompileInputs.cache
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Release\EF6ClassLibraryCodeFirst.dll.config
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Release\EF6ClassLibraryCodeFirst.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Release\EF6ClassLibraryCodeFirst.pdb
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Release\EntityFramework.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Release\EntityFramework.xml
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Release\EF6ClassLibraryCodeFirst.csproj.CopyComplete
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Release\EF6ClassLibraryCodeFirst.dll
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryCodeFirst\obj\Release\EF6ClassLibraryCodeFirst.pdb

@@ -1,4 +1,4 @@
-﻿using EFCodeFirst = EF6ClassLibrary;
+﻿using EFCodeFirst = EF6ClassLibraryCodeFirst;
 using EFCodeFirstFluentAPI = EF6ClassLibraryFluentAPI;
 using System;
 using System.Data.Entity;

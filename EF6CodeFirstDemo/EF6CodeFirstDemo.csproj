@@ -57,13 +57,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EF6ClassLibraryCodeFirst\EF6ClassLibraryCodeFirst.csproj">
+      <Project>{a1d0741a-ff6c-4fa4-97f4-32ed8bb61a22}</Project>
+      <Name>EF6ClassLibraryCodeFirst</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EF6ClassLibraryFluentAPI\EF6ClassLibraryFluentAPI.csproj">
       <Project>{ed2a6c3a-b1d2-4b0e-9d4d-68786392b661}</Project>
       <Name>EF6ClassLibraryFluentAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EF6ClassLibrary\EF6ClassLibrary.csproj">
-      <Project>{062CD62D-D521-49A2-A7BD-5C955C6A70DF}</Project>
-      <Name>EF6ClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

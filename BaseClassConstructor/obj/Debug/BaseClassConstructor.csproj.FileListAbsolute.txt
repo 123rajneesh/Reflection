@@ -1,6 +1,0 @@
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\bin\Debug\BaseClassConstructor.exe.config
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\bin\Debug\BaseClassConstructor.exe
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\bin\Debug\BaseClassConstructor.pdb
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Debug\BaseClassConstructor.csproj.CoreCompileInputs.cache
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Debug\BaseClassConstructor.exe
-C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\BaseClassConstructor\obj\Debug\BaseClassConstructor.pdb

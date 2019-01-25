@@ -265,6 +265,10 @@
     <Compile Include="Migrations\201901170941381_update migration 17.Designer.cs">
       <DependentUpon>201901170941381_update migration 17.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901230718454_Data annotaion added schemas to Blog entity 11.cs" />
+    <Compile Include="Migrations\201901230718454_Data annotaion added schemas to Blog entity 11.Designer.cs">
+      <DependentUpon>201901230718454_Data annotaion added schemas to Blog entity 11.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleDBContext.cs" />
@@ -432,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901170941381_update migration 17.resx">
       <DependentUpon>201901170941381_update migration 17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901230718454_Data annotaion added schemas to Blog entity 11.resx">
+      <DependentUpon>201901230718454_Data annotaion added schemas to Blog entity 11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

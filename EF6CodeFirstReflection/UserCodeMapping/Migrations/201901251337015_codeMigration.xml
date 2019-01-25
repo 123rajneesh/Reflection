@@ -1,0 +1,327 @@
+<Edmx Version="3.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <Runtime>
+    <ConceptualModels>
+      <Schema Namespace="EF6ClassLibraryCodeFirst" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <ComplexType Name="BlogDetails" customannotation:ClrType="EF6ClassLibraryCodeFirst.BlogDetails, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Property Name="DateCreated" Type="DateTime" />
+          <Property Name="BloggerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </ComplexType>
+        <EntityType Name="Address" customannotation:ClrType="EF6ClassLibraryCodeFirst.Address, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ZipCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Blog" customannotation:ClrType="EF6ClassLibraryCodeFirst.Blog, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Title" />
+          </Key>
+          <Property Name="Title" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BloggerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BlogType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="Self.BlogDetails" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Book" customannotation:ClrType="EF6ClassLibraryCodeFirst.Book, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RelaseDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Publication" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Department" customannotation:ClrType="EF6ClassLibraryCodeFirst.Department, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee" customannotation:ClrType="EF6ClassLibraryCodeFirst.Employee, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Department" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Student" customannotation:ClrType="EF6ClassLibraryCodeFirst.Student, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DataOfBirth" Type="DateTime" />
+          <Property Name="Height" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Weight" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Blog" Relationship="Self.Student_Blog" FromRole="Student_Blog_Source" ToRole="Student_Blog_Target" />
+        </EntityType>
+        <EntityType Name="Teacher" customannotation:ClrType="EF6ClassLibraryCodeFirst.Teacher, EF6ClassLibraryCodeFirst, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DateOfBirth" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Height" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Weight" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BloodGroup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CVV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="Student_Blog">
+          <End Role="Student_Blog_Source" Type="Self.Student" Multiplicity="*" />
+          <End Role="Student_Blog_Target" Type="Self.Blog" Multiplicity="0..1" />
+        </Association>
+        <EntityContainer Name="SampleDBContext" customannotation:UseClrTypes="true">
+          <EntitySet Name="Address" EntityType="Self.Address" />
+          <EntitySet Name="Blogs" EntityType="Self.Blog" />
+          <EntitySet Name="Book" EntityType="Self.Book" />
+          <EntitySet Name="Department" EntityType="Self.Department" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" />
+          <EntitySet Name="Student" EntityType="Self.Student" />
+          <EntitySet Name="Teacher" EntityType="Self.Teacher" />
+          <AssociationSet Name="Student_Blog" Association="Self.Student_Blog">
+            <End Role="Student_Blog_Source" EntitySet="Student" />
+            <End Role="Student_Blog_Target" EntitySet="Blogs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </ConceptualModels>
+    <Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CodeFirstDatabase" CdmEntityContainer="SampleDBContext">
+          <EntitySetMapping Name="Address">
+            <EntityTypeMapping TypeName="EF6ClassLibraryCodeFirst.Address">
+              <MappingFragment StoreEntitySet="Address">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Blogs">
+            <EntityTypeMapping TypeName="EF6ClassLibraryCodeFirst.Blog">
+              <MappingFragment StoreEntitySet="Blog">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="BloggerName" ColumnName="BloggerName1" />
+                <ScalarProperty Name="BlogType" ColumnName="BlogType" />
+                <ComplexProperty Name="Description" TypeName="EF6ClassLibraryCodeFirst.BlogDetails">
+                  <ScalarProperty Name="DateCreated" ColumnName="CreatedDated" />
+                  <ScalarProperty Name="BloggerName" ColumnName="BloggerName" />
+                </ComplexProperty>
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Book">
+            <EntityTypeMapping TypeName="EF6ClassLibraryCodeFirst.Book">
+              <MappingFragment StoreEntitySet="Book">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Author" ColumnName="Author" />
+                <ScalarProperty Name="RelaseDate" ColumnName="RelaseDate" />
+                <ScalarProperty Name="Publication" ColumnName="Publication" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Department">
+            <EntityTypeMapping TypeName="EF6ClassLibraryCodeFirst.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="EF6ClassLibraryCodeFirst.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Student">
+            <EntityTypeMapping TypeName="EF6ClassLibraryCodeFirst.Student">
+              <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DataOfBirth" ColumnName="DoB" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Photo" ColumnName="Image" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teacher">
+            <EntityTypeMapping TypeName="EF6ClassLibraryCodeFirst.Teacher">
+              <MappingFragment StoreEntitySet="Teacher">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="CVV" ColumnName="CVV" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Student_Blog" TypeName="EF6ClassLibraryCodeFirst.Student_Blog" StoreEntitySet="Student">
+            <EndProperty Name="Student_Blog_Target">
+              <ScalarProperty Name="Title" ColumnName="Blog_Title" />
+            </EndProperty>
+            <EndProperty Name="Student_Blog_Source">
+              <ScalarProperty Name="Id" ColumnName="Id" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="Blog_Title" />
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </Mappings>
+    <StorageModels>
+      <Schema Namespace="CodeFirstDatabaseSchema" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="City" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Country" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Street" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="ZipCode" Type="nvarchar(max)" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Blog">
+          <Key>
+            <PropertyRef Name="Title" />
+          </Key>
+          <Property Name="Title" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="BloggerName1" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="BlogType" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="CreatedDated" Type="datetime" Nullable="true" />
+          <Property Name="BloggerName" Type="nvarchar" MaxLength="20" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Type" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Author" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="RelaseDate" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Publication" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="CreatedBy" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Department" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="DoB" Type="datetime2" Precision="7" Nullable="true" />
+          <Property Name="Height" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Weight" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Image" Type="ntext" Nullable="true" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="Blog_Title" Type="nvarchar" customannotation:Index="{ Name: IX_Blog_Title, Order: 0 }" MaxLength="128" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Teacher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="DateOfBirth" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Height" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Weight" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="BloodGroup" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="Photo" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="CVV" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="Student_Blog">
+          <End Role="Blog" Type="Self.Blog" Multiplicity="0..1" />
+          <End Role="Student" Type="Self.Student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Blog">
+              <PropertyRef Name="Title" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="Blog_Title" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CodeFirstDatabase">
+          <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" Table="Addresses" />
+          <EntitySet Name="Blog" EntityType="Self.Blog" Schema="dbo" Table="Blogs" />
+          <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" Table="Books" />
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" Table="Departments" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" Table="EmployeeInfo" />
+          <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" Table="Students" />
+          <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" Table="Teachers" />
+          <AssociationSet Name="Student_Blog" Association="Self.Student_Blog">
+            <End Role="Blog" EntitySet="Blog" />
+            <End Role="Student" EntitySet="Student" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </StorageModels>
+  </Runtime>
+  <Designer>
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="ProcessDependentTemplatesOnSave" Value="False" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <Diagrams />
+  </Designer>
+</Edmx>

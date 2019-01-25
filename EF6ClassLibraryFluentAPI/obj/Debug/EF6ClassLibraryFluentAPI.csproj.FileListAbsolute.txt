@@ -56,6 +56,7 @@ C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryF
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.Migrations.updatebookmigrationtohidebaseclassdomainEntity15.resources
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.Migrations.updatemigration16.resources
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.Migrations.updatemigration17.resources
+C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.Migrations.DataannotaionaddedschemastoBlogentity11.resources
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.csproj.GenerateResource.cache
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.csproj.CoreCompileInputs.cache
 C:\Users\rajneesh.kumar\source\repos\EF6-Code-First-Demo-master\EF6ClassLibraryFluentAPI\obj\Debug\EF6ClassLibraryFluentAPI.csproj.CopyComplete

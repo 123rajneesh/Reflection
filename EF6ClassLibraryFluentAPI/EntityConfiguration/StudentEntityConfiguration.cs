@@ -17,6 +17,7 @@ namespace EF6ClassLibraryFluentAPI
             this.Map(m =>
             {
                 m.Properties(p => new { p.Id, p.Name, p.Photo, p.IsActive });
+                m.Property(p=>p.Id).HasColumnName("StudentInfoId");
                 m.ToTable("StudentInfo");
             }).Map(m =>
             {
